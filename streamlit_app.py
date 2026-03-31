@@ -4,8 +4,7 @@ import plotly.express as px
 
 st.set_page_config(page_title = "titanic dashboard", page_icon = "🚢oops", layout = "wide")
 st.title("🚢 dashboard: titanic passengers")
-st.markdown("This dashboard is created for interactive analysis of data about the passengers of the legendary Titanic\n 
-Here we can see statistics, passenger distribution, and factors that influenced survival")
+st.markdown("This dashboard is created for interactive analysis of data about the passengers of the legendary Titanic\n Here we can see statistics, passenger distribution, and factors that influenced survival")
 @st.cache_data #используем кэш для быстрой работы приложения
 def load_data():
     url = "https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv"
